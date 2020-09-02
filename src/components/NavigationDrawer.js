@@ -60,7 +60,7 @@ class NavigationDrawer extends Component {
                 [classes.appBarShift]: this.state.open,
               })}
             >
-              <Toolbar>
+              <Toolbar position="fixed">
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
@@ -123,7 +123,9 @@ class NavigationDrawer extends Component {
               })}
             >
               <div className={classes.drawerHeader} />
+              <div>
               <MainViewCards></MainViewCards>
+              </div>
             </main>
           </div>
         )
@@ -139,7 +141,8 @@ const styles = theme => ({
     rootCard: {
         width: "auto",
         alignItems: "center",
-        alignContent: "center"
+        alignContent: "center",
+        marginBottom: "100%"
     },
     appBar: {
         transition: theme.transitions.create(['margin', 'width'], {
@@ -200,9 +203,10 @@ const styles = theme => ({
     },
     signOff: {
        
-        position:"absolute",
-        bottom:"5px",
+        position:"static",
+        bottom:"10%",
         right:"75px",
+        marginTop: "20%"
 
     }
 });
