@@ -126,6 +126,9 @@ class Login extends Component{
                                 Login
                             </Button>
                         </form>
+
+                        <Typography variant="h6">username: andres</Typography>
+                        <Typography variant="h6">password: 12345</Typography>
                     </Paper>
                 </main>
             </React.Fragment>
