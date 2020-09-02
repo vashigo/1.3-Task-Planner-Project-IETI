@@ -85,7 +85,7 @@ class Login extends Component{
                         <Typography variant="h2">Task Planner</Typography>
                         <form className="form">
                             <FormControl margin="normal" required fullWidth>
-                                <InputLabel htmlFor="email">Email Address</InputLabel>
+                                <InputLabel htmlFor="email">Username</InputLabel>
                                 <Input
                                     id="email"
                                     name="username"
